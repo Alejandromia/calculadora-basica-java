@@ -1,2 +1,2 @@
-# calculadora-basica-java
-Actividad GitHub 5
+# Alejandro Guaman Zuñiga
+Actividad GitHub y Netbeans
