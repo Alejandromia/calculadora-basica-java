@@ -42,7 +42,14 @@ public class calculadora {
                         }
                         break;
                     case 5:
-                        System.out.println("El módulo de " + num1 + " % " + num2 + " es: " + modulo(num1, num2));
+                        if (num2 != 0) 
+                        {
+                        System.out.println("El mmódulo de " + num1 + " % " + num2 + " es: " + modulo(num1, num2));
+                        } 
+                        else 
+                        {
+                            System.out.println("Error: No se puede hacer el modulo de cero.");  
+                        }
                         break;
                 }
             } else if (opcion == 6) {
