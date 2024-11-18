@@ -13,7 +13,8 @@ public class calculadora {
             System.out.println("3. Multiplicación");
             System.out.println("4. División");
             System.out.println("5. Modulo");
-            System.out.println("6. Salir");
+            System.out.println("6. Potencia");
+            System.out.println("7. Salir");
             System.out.print("Elige una opción: ");
 
             int opcion = scanner.nextInt();
@@ -51,6 +52,16 @@ public class calculadora {
                             System.out.println("Error: No se puede hacer el modulo de cero.");  
                         }
                         break;
+                    case 6:
+                        if (num1 != 0) 
+                        {
+                        System.out.println(num1 + " elevado a " + num2 + " es: " + potencia(num1, num2));
+                        } 
+                        else 
+                        {
+                            System.out.println("Error: La potencia de 0 da como resultado tambien 0.");  
+                        }
+                        break;
                 }
             } else if (opcion == 6) {
                 continuar = false;
@@ -68,4 +79,5 @@ public class calculadora {
     public static double multiplicar(double a, double b) { return a * b; }
     public static double dividir(double a, double b) { return a / b; }
     public static double modulo(double a, double b) { return a % b; }
+    public static double potencia(double a, double b) { return Math.pow(a, b); }
 }
